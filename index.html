@@ -41,14 +41,19 @@
 <body>
     <h1>The River</h1>
     <img src="assets/image-1.png" alt="Coming Soon">
-    <p>Once you're in the zone the river flows down like a full stone</p>
+    <br><p>Once you're in the zone the river flows down like a full stone</p><br>
     <article>
         <h2>Contact Me</h2>
-        <div class="form-border">
-            <p>Name:<input for="name" id="contact-me"></input></p>
-            <p>Email:<input for="email"></input></p>
-            <button>SEND IT</button>
-        </div>
+        <form class="form-border">
+        <form action="process.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
     </article>
     <footer>Water is your bed, the ripples cushion your head</footer>
 </body>
